@@ -6,7 +6,7 @@ namespace ZooApp
     {
         static void Main(string[] args)
         {
-			Animal animal = new Animal("Milou","aboie");
+			Animal animal = new Animal("Milou","aboie", "chien");
 			
 			animal.Presentation();
 			animal.EmettreCris();

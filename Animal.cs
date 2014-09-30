@@ -6,11 +6,13 @@ namespace zooApp
     {
         public String nom;
         public String cris;
+		public String race;
 
-        public Animal(String a, String b)
+        public Animal(String le_nom, String le_cris, String la_race)
         {
-            nom = a;
-            cris = c;
+            nom = le_nom;
+            cris = le_cris;
+			race =la_race;
         }
        
         public void EmettreCris()
@@ -20,7 +22,9 @@ namespace zooApp
 
         public void Presentation()
         {
+			Console.WriteLine("Bonjour! Je suis un(e) " + race + ".");
             Console.WriteLine("Je m'appelle " + nom + ".");
+            Console.WriteLine("Mon cris c'est  " + jeDis + ".");
         }
     }
 }
